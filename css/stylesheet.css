@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.header img{
+    width: 257px;
+    height: 141px;
+    margin: 25px;
+}
+.title h1{
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    margin: 25px;
+}
+.container-add .add-task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 50px 20px 50px;
+}
+.add-task .add-text p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin: 10px;
+}
+.add-box form input{
+    font-family: Montserrat, sans-serif;
+    font-weight:500;
+    font-size: 20px;
+    margin: 10px;
+    width: 1129px;
+    height: 65px;
+    color: #626262;
+    background-color: #EBEBEB;
+    border-radius: 31px;
+    border: none;
+      
+}
+.container-busca .busca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 50px 20px 50px;
+}
+.busca .busca-text p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin: 10px;
+}
+.busca-box form input{
+    font-family: Montserrat, sans-serif;
+    font-weight:500;
+    font-size: 20px;
+    margin: 10px;
+    width: 1129px;
+    height: 65px;
+    color: #626262;
+    background-color: #EBEBEB;
+    border-radius: 31px;
+    border: none;
+      
+}
+.container-task-list .task{
+    font-family: Montserrat, sans-serif;
+    font-weight:400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E9E9E9 ;
+    border-radius: 10px;
+    margin: 10px 50px 10px 50px;
+    width: 90%;
+    height: 85px;
+}
+.task .task-rank select{
+    font-family: Montserrat, sans-serif;
+    font-weight:200;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+
+    
+}
+.task .task-rank select optgroup{
+    font-family: Montserrat, sans-serif;
+    font-weight:200;
+    font-size: 16px;
+}
