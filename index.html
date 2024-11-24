@@ -30,12 +30,12 @@
                 <p>Adicionar Tarefa</p>
             </div>
             <div class="add-box">
-                <form action="">
-                    <input type="text" name="add-fiel" id="addTask" placeholder="Nome da Tarefa">
+                <form>
+                    <input type="text" name="addField" id="addTask" placeholder="Nome da Tarefa">
                 </form>
             </div>
             <div class="add-icon">
-                <a href=""><i data-feather="plus-circle" style="width: 56; height: 56px; color: #27A900;"></i></a>
+                <button>Enviar</button> 
             </div>
         </div>
     </nav>
@@ -45,12 +45,12 @@
                 <p>Pesquisar Tarefa</p>
             </div>
             <div class="busca-box">
-                <form action="">
+                <form>
                     <input type="text" name="busca" id="busca" placeholder="Nome da Tarefa">
                 </form>
             </div>
             <div class="busca-icon">
-                <a href=""><i data-feather="search" style="width: 56; height: 56px; color: #5F6368;"></i></a>
+                <button>Pesquisar</button>
             </div>
         </div>
     </nav>
@@ -79,10 +79,17 @@
             </div>
         </div>
     </div>
+
+
+    <dialog>
+        <p>Deseja contnuar essa ação?</p>
+        <div class="botoes">
+            <button class="sim-modal">Sim</button>
+            <button class="nao-modal">Cancelar</button>
+        </div>
+    </dialog>
     
 
-    <script>
-        feather.replace();
-    </script>
+    <script src="js/mobile.js"></script>
 </body>
 </html>

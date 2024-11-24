@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Montserrat, sans-serif;
 }
 .header{
     margin: 50px;
@@ -15,30 +16,28 @@
     margin: 0;
 }
 .title h1{
-    font-family: Montserrat, sans-serif;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 3rem;
     margin: 0px;
+    text-align: center;
 }
 .container-add .add-task{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    margin: 20px 50px 20px 50px;
+    width: 100%;
 }
-.add-task .add-text p{
-    font-family: Montserrat, sans-serif;
+.add-task .add-text{
     font-weight: 900;
-    font-size: 32px;
-    margin: 10px;
+    font-size: 28px;
+    width: 30%;
+    text-align: center;
 }
 .add-box form input{
-    font-family: Montserrat, sans-serif;
     font-weight:500;
     font-size: 20px;
-    margin: 10px;
-    width: 1129px;
+    margin: 1rem;
+    width: 45rem;
     height: 65px;
     color: #626262;
     background-color: #EBEBEB;
@@ -46,26 +45,36 @@
     border: none;
     padding-left: 20px;
       
+}
+.add-task .add-icon button{
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    font-weight:400;
+    font-size: 15px;
+    margin: 1rem;
+    background-color: green;
+    border-radius: 31px;
+    border: none;
 }
 .container-busca .busca{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 50px 20px 50px;
+    width: 100%;
 }
-.busca .busca-text p{
-    font-family: Montserrat, sans-serif;
+.busca .busca-text {
     font-weight: 900;
-    font-size: 32px;
-    margin: 10px;
+    font-size: 28px;
+    width: 30%;
+    text-align: center;
 }
 .busca-box form input{
-    font-family: Montserrat, sans-serif;
     font-weight:500;
     font-size: 20px;
-    margin: 10px;
-    width: 1129px;
+    margin: 1rem;
+    width: 45rem;
     height: 65px;
     color: #626262;
     background-color: #EBEBEB;
@@ -74,39 +83,99 @@
     padding-left: 20px;
       
 }
+.busca .busca-icon button{
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    font-weight:400;
+    font-size: 15px;
+    background-color: gray;
+    border-radius: 31px;
+    border: none;
+}
 .container-task-list .task{
-    font-family: Montserrat, sans-serif;
     font-weight:400;
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     align-items: center;
     background-color: #E9E9E9 ;
     border-radius: 10px;
-    margin: 10px 50px 10px 50px;
     width: 90%;
     height: 85px;
+    margin: 50px;
 }
 .container-task-list .task .task-name{
-    margin: 5%;
+    text-align: center;
+    font-size: 1rm;
 }
 .task .task-rank select{
-    font-family: Montserrat, sans-serif;
+    margin: 100%;
     font-weight:300;
     font-size: 20px;
-    width: 200px;
+    width: 100%;
     height: 35px;
     border-radius: 20px;
     padding: 5px;
     border: none;
-    margin-left: 700px;
-    margin-right: 200px;
-
-    
+       
 }
 .task .task-rank select optgroup{
     font-family: Montserrat, sans-serif;
     font-weight:200;
     font-size: 16px;
+}
+dialog::backdrop{
+    background-color: rgb(0 0 0/ .5);
+}
+dialog{
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0/ .5);
+    width: 70%;
+    height: 70px;
+
+}
+dialog p{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+dialog .botoes{
+    display: flex;
+    flex-direction: row;
+}
+dialog .sim-modal{
+    width: 50%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: .5rem 0 0 .5rem ;
+    cursor: pointer;
+    
+}
+dialog .nao-modal{
+    width: 50%;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 0 .5rem .5rem 0 ;
+    cursor: pointer;
+}
+dialog .sim-modal:hover{
+    background-color: rgb(41, 145, 41);
+}
+dialog .nao-modal:hover{
+    background-color: rgb(214, 34, 34);
 }
