@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="style.css"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,75 +11,28 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="js/mobile.js"></script>
-
+    <script src="path/to/dist/feather.js"></script>
+    
     <title>My To-Do List</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="img/logo-ifpr.png" alt="logo-ifpr">
-        </div>
-        <div class="title">
-            <h1>To-Do List IFPR</h1>
-        </div>
+        <img src="img/logo-ifpr.png" alt="logo-ifpr" class="logo">
+        <h1 class="title">To-Do List IFPR</h1>
     </header>
     <nav class="container-add">
-        <div class="add-task">
-            <div class="add-text">
-                <p>Adicionar Tarefa</p>
-            </div>
-            <div class="add-box">
-                <form>
-                    <input type="text" name="addField" id="addTask" placeholder="Nome da Tarefa">
-                </form>
-            </div>
-            <div class="add-icon">
-                <button>Enviar</button> 
-            </div>
-        </div>
+        <input id="inputTarefa" type="text" placeholder="Adicionar Uma Tarefa">
+        <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>
     </nav>
-    <nav class="container-busca">
-        <div class="busca">
-            <div class="busca-text">
-                <p>Pesquisar Tarefa</p>
-            </div>
-            <div class="busca-box">
-                <form>
-                    <input type="text" name="busca" id="busca" placeholder="Nome da Tarefa">
-                </form>
-            </div>
-            <div class="busca-icon">
-                <button>Pesquisar</button>
-            </div>
-        </div>
+    <nav class="container-pesq">
+        <input id="inputPesquisar" type="text" placeholder="Encontre Sua Tarefa">
+        <button id="btn-pesq" class="add">Pesquisar</button>
     </nav>
     <hr>
-    <div class="container-task-list"> <!--é criado conforme o usúario vai adicionando as tarefas-->
-        <div class="task">
-            <div class="task-name">
-                <p>Atividade 1</p>
-            </div> <!--recebe o nome da atividade que o usuário entrou-->
-            <div class="task-rank">
-                <select name="prioridades" id="rank">
-                    <option value="">Prioridade</option>
-                    <option value="p-alta">Tá atrasado!</option>
-                    <option value="p-media">Se liga!</option>
-                    <option value="p-baixa">Tá tranquilo!</option>
-                </select>
-            </div>
-            <div class="edit-icon">
-                <a href="#"><i data-feather="edit" style= "width: 48px; height: 48px; color: #B4BB56; margin: 20px;"></i></a>
-            </div>
-            <div class="delete-icon">
-                <a  href="#"><i data-feather="trash-2" style= "width: 48px; height: 48px; color: #BF3D3F;  margin: 20px;"></i></a>
-            </div>
-            <div class="complete-icon">
-                <a  href="#"><i data-feather="check-square" style= "width: 48px; height: 48px; color: #2AB92A;  margin: 20px;"></i></a>
-            </div>
-        </div>
-    </div>
+    <main id="areaLista">
+        <!-- Onde vai aparecer as tarefas -->
 
+    </main>
 
     <dialog>
         <p>Deseja contnuar essa ação?</p>
@@ -88,8 +41,11 @@
             <button class="nao-modal">Cancelar</button>
         </div>
     </dialog>
-    
 
-    <script src="js/mobile.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
 </body>
 </html>

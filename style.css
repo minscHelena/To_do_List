@@ -5,39 +5,33 @@
 }
 .header{
     margin: 50px;
+    margin-left: 20%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
     align-items: center;
+    align-content: center;
 }
 .header img{
     width: 257px;
     height: 141px;
-    margin: 0;
+    margin-right: 50px;
 }
-.title h1{
+.title{
     font-weight: 900;
     font-size: 3rem;
-    margin: 0px;
     text-align: center;
 }
-.container-add .add-task{
+.container-add {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
 }
-.add-task .add-text{
-    font-weight: 900;
-    font-size: 28px;
-    width: 30%;
-    text-align: center;
-}
-.add-box form input{
+#inputTarefa{
     font-weight:500;
     font-size: 20px;
     margin: 1rem;
-    width: 45rem;
+    width: 70%;
     height: 65px;
     color: #626262;
     background-color: #EBEBEB;
@@ -46,8 +40,8 @@
     padding-left: 20px;
       
 }
-.add-task .add-icon button{
-    width: 100%;
+#btn-add{
+    width: 30%;
     height: 65px;
     padding: 20px;
     font-weight:400;
@@ -56,25 +50,19 @@
     background-color: green;
     border-radius: 31px;
     border: none;
+    cursor: pointer;
 }
-.container-busca .busca{
+.container-pesq{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;
 }
-.busca .busca-text {
-    font-weight: 900;
-    font-size: 28px;
-    width: 30%;
-    text-align: center;
-}
-.busca-box form input{
+#inputPesquisar{
     font-weight:500;
     font-size: 20px;
     margin: 1rem;
-    width: 45rem;
+    width: 70%;
     height: 65px;
     color: #626262;
     background-color: #EBEBEB;
@@ -83,17 +71,19 @@
     padding-left: 20px;
       
 }
-.busca .busca-icon button{
-    width: 100%;
+#btn-pesq{
+    width: 30%;
     height: 65px;
     padding: 20px;
     font-weight:400;
     font-size: 15px;
-    background-color: gray;
+    margin: 1rem;
+    background-color: rgb(170, 170, 170);
     border-radius: 31px;
     border: none;
+    cursor: pointer;
 }
-.container-task-list .task{
+.task{
     font-weight:400;
     font-size: 20px;
     display: flex;
@@ -106,11 +96,11 @@
     height: 85px;
     margin: 50px;
 }
-.container-task-list .task .task-name{
+.task .task-name{
     text-align: center;
     font-size: 1rm;
 }
-.task .task-rank select{
+.rank{
     margin: 100%;
     font-weight:300;
     font-size: 20px;
@@ -120,8 +110,25 @@
     padding: 5px;
     border: none;
        
+}.icons{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 40px;
 }
-.task .task-rank select optgroup{
+.complete-icon img{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.edit-icon img{
+    margin-right: 7.5px;
+}
+.delete-icon img{
+    margin-left: 7.5px;
+} 
+.rank select optgroup{
     font-family: Montserrat, sans-serif;
     font-weight:200;
     font-size: 16px;
