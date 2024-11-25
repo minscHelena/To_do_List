@@ -5,6 +5,9 @@ let input = document.querySelector("input");
 let btnAdd = document.querySelector("button");
 let main = document.querySelector("main");
 
+let modal = document.querySelector("dialog");
+let btnModal = document.querySelector("button");
+
 btnAdd.addEventListener("click", (e) =>{
 //PEGAR O VALOR DIGITADO NO INPUT
 let valorInput = input.value;
@@ -25,7 +28,7 @@ if (valorInput !== "" && valorInput !== null && valorInput !== undefined) {
             </div>
             <div class="icons">
                 <div class="complete-icon">
-                    <img src="img/check-square.svg" alt="">
+                    <img src="img/check-square.svg" alt="" onclick="completar(${contador})">
                 </div>
                 <div class="edit-icon">
                     <img src="img/edit.svg" alt="">            
@@ -43,11 +46,23 @@ if (valorInput !== "" && valorInput !== null && valorInput !== undefined) {
   input.focus();
 }
 });
-  
+
 function deletar(id) {
   var tarefa = document.getElementById(id);
   tarefa.remove();
+  
 }
+function completar(id) { //apaga a tarefa igualmente
+  /*var tarefa = document.getElementById(id);
+  tarefa.remove();*/
+  modal.showModal();
+  
+}
+
+function fecharModal(){
+  modal.close();
+}
+
 
 /*function marcarTarefa(id) {
   var item = document.getElementById(id);

@@ -140,8 +140,10 @@ dialog{
     border: none;
     border-radius: .5rem;
     box-shadow: 0 0 1em rgb(0 0 0/ .5);
-    width: 70%;
-    height: 70px;
+    width: 450px;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 40%;
 
 }
 dialog p{
@@ -155,7 +157,7 @@ dialog .botoes{
 }
 dialog .sim-modal{
     width: 50%;
-    height: 30px;
+    height: 69px;
     background-color: green;
     color: white;
     font-size: medium;
@@ -169,7 +171,7 @@ dialog .sim-modal{
 }
 dialog .nao-modal{
     width: 50%;
-    height: 30px;
+    height: 69px;
     background-color: red;
     color: white;
     font-size: medium;
