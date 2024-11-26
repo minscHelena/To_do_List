@@ -21,7 +21,7 @@ if (valorInput !== "" && valorInput !== null) {
   let novoItem = `<div id = ${contador} class="task">
             <p id = ${contador} class="task-name">${valorInput}</p>
             <div>
-                <select id = ${contador} class="rank" onchange="mudaCor(this)">
+                <select id = ${contador} class="rank" onchange="mudaCor(this, ${contador})">
                     <option value="">Prioridade</option>
                     <option id="pri" value="#F07474">Tá atrasado!</option>
                     <option id="pri" value="#ECF074">Se liga!</option>
@@ -61,9 +61,9 @@ function fecharModal(){
   modal.close();
 };
 
-function mudaCor(pegaCor) {
-  let bg = document.querySelector(".task");
-  let bgSelect = document.querySelector(".rank");
+function mudaCor(pegaCor, id) {
+  let bg = document.getElementById(id);
+
   let cor = pegaCor.value;
 
   bg.style.backgroundColor = cor;
