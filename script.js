@@ -50,7 +50,7 @@ if (valorInput !== "" && valorInput !== null) {
 function deletar(id) {
   var tarefa = document.getElementById(id);
   tarefa.remove();
-  modal.close()
+  modal.close();
   
 };
 function openModal(id) {
